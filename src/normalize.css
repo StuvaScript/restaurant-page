@@ -2,6 +2,16 @@
 
 /* Document
    ========================================================================== */
+/* ---------------------------------------- */
+/* Stu's Addition */
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* ---------------------------------------- */
 
 /**
  * 1. Correct the line height in all browsers.
