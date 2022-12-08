@@ -20,7 +20,7 @@ header {
 }
 
 h1 {
-    font-family: 'CustomFont';
+    font-family: 'CustomFont', Arial, sans-serif;
     letter-spacing: 5px;
     position: absolute;
     top: 20px;
