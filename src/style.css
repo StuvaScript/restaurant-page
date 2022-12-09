@@ -59,18 +59,18 @@ main > * {
     justify-content: center;
 }
 
-ul {
+.sidebar ul {
     padding: 0;
     margin: 0;
     font-size: 2rem;
 }
 
-li {
+.sidebar li {
     list-style-type: none;
     padding-bottom: 9rem;
 }
 
-li::after {
+.sidebar li::after {
     /* content: url(../src/pictures/fish-bone.png); */
     background-image: url(../src/pictures/fish-bone.png);
     background-size: 50px 50px;
@@ -87,7 +87,7 @@ li::after {
     transition-timing-function: ease-in;
 }
 
-li:hover::after {
+.sidebar li:hover::after {
     opacity: 1;
 }
 
@@ -158,5 +158,42 @@ p {
 }
 
 footer {
-    border: 3px solid green;
+    color: var(--white);
+    padding: 20px;
+    background: var(--brown);
+}
+
+footer p {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: center;
+    justify-content: center;
+}
+
+footer li {
+    list-style-type: none;
+    padding: 10px;
+    font-size: 1rem;
+
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:link,
+a:visited,
+a:hover,
+a:active {
+    color: var(--white);
 }
