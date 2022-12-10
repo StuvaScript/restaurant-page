@@ -6,8 +6,8 @@ import shed from './pictures/pexels-stein-egil-liland-5740848.jpg';
 
 function component() {
 
-    return frontPage.page();
+    return frontPage.obj;    
 
 }
-
-document.querySelector('#content').appendChild(component());
+frontPage();
+document.querySelector('#content').appendChild(frontPage.obj);
