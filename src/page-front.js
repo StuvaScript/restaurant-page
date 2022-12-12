@@ -1,36 +1,39 @@
-const frontPage = () => {
+const frontPage = (() => {
 
-    // const yonkers = {
-    //     _init: function() {
-    //         this._cacheDom();
-    //         this._render();
-    //     },
-    //     _cacheDom: function() {
-    //         this.newDiv = document.createElement('div');
-    //     },
-    //     _render: function() {
-    //         this.newDiv.innerText = 'blumpkin';
-    //     },
-    // };
-
-    // yonkers._init();
-
-
-
-    const obj = {
-        buns: function() {
-            const yodiv = document.createElement('div');
-            yodiv.innerText = 'burgers';
-            document.querySelector('#content').appendChild(yodiv);
+    const innerObject = {
+        init: function() {
+            this.cacheDom();
+            this.append();
         },
-    }
-    // obj.buns();
+        cacheDom: function() {
+            this.element = document.querySelector('#content');
+        },
+        // create: function() {
+        //     this.div = document.createElement('div');
+        // },
+        create: function() {
+            this.div = document.createElement('div');
+            this.para = document.createElement('p');
+        },
+        append: function() {
+            this.create();
+            this.div.innerText = 'burgers';
+            this.div.classList.add('love');
+            this.element.appendChild(this.div);
+            this.create();
+            this.div.innerText = 'ho';
+            this.div.classList.add('boink');
+            this.element.appendChild(this.div);
+            this.create();
+            this.para.innerText = 'slut';
+            this.element.appendChild(this.para);
+        },
+    };
+
+    innerObject.init();
     
-    return {obj};
-};
+    return{innerObject};
+
+})();
 
 export default frontPage;
-
-
-// Trying to call the object into the other page and append the elements on the index.js
-// file. I don't fucking knowwwwwwww

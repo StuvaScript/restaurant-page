@@ -5,9 +5,8 @@ import shed from './pictures/pexels-stein-egil-liland-5740848.jpg';
 // Import the other photos too?
 
 function component() {
-
-    return frontPage.obj;    
-
+    console.log(frontPage.innerObject);
+    return frontPage.innerObject;
 }
-frontPage();
-document.querySelector('#content').appendChild(frontPage.obj);
+
+document.querySelector('#content').appendChild(component());
