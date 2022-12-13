@@ -2,15 +2,15 @@ import frontPage from './page-front.js';
 import './normalize.css';
 import './style.css';
 import shed from './pictures/pexels-stein-egil-liland-5740848.jpg';
+
 // Import the other photos too?
 
 function component() {
-    console.log(frontPage.innerObject);
-    return frontPage.innerObject;
+    // console.log(frontPage());
+    return frontPage();
 }
 
-// The code below is throwing the error. I'm trying to make it so that I can
-// import front-page.js without it automatically compiling on the page.
+document.querySelector('#content').append(component());
 
-// Comment out the code below to see the error disappear
-document.querySelector('#content').appendChild(component());
+// Make sure to change your devtool in webpack.config.js to something more 
+// production friendly when you finish this project
