@@ -10,7 +10,8 @@ function component() {
     return frontPage();
 }
 
-document.querySelector('#content').append(component());
+component();
+
 
 // Make sure to change your devtool in webpack.config.js to something more 
 // production friendly when you finish this project

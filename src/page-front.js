@@ -1,19 +1,23 @@
-const frontPage = () => {
+export default function frontPage() {
 
     const innerObject = {
         init: function() {
-            this.cacheDom(); 
+
+            // Do I even need to cache the DOM here??
+            // this.cacheDom(); 
+
             this.createHeader();
         },
         cacheDom: function() {
-            this.content = document.querySelector('#content');
+            // Do I even need this??
+            // this.content = document.querySelector('#content');
         },
         domManipulate: function(element, innerText, className, appendTo, ...attributes) {
             let newElement = document.createElement(element);
             (innerText !== '') ? newElement.innerText = innerText : '';
             (className !== '') ? newElement.classList.add(className) : '';
             document.querySelector(appendTo).appendChild(newElement);
-            if (attributes !== '') {
+            if (attributes.length !== 0) {
                 let sets = attributes.length / 2;
                 let attPosition = 0;
                 let valPosition = 1;
@@ -28,7 +32,7 @@ const frontPage = () => {
             
             // element, innerText, className, appendTo, ...attributes
 
-            this.header = this.domManipulate('header', '', 'header', '#content');
+            this.header = this.domManipulate('header', '', '', '#content');
             this.headerH1 = this.domManipulate('h1', '', '', 'header');
             this.headerSpan1 = this.domManipulate('span', 'Abandoned', '', 'h1');
             this.headerBr = this.domManipulate('br', '', '', 'h1');
@@ -39,8 +43,6 @@ const frontPage = () => {
 
     innerObject.init();
     
-    return{innerObject};
+    return {innerObject};
 
 };
-
-export default frontPage;
