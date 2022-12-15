@@ -48,10 +48,6 @@ main {
     grid-template-columns: 1fr 5fr;
 }
 
-main > * {
-    /* border: 3px solid blue; */
-}
-
 .sidebar {
     display: flex;
     justify-content: center;
@@ -89,17 +85,13 @@ main > * {
     opacity: 1;
 }
 
-.content {
+.feature {
     padding-bottom: 30px;
 
     display: grid;
     grid-template-rows: repeat(4, auto);
     grid-template-columns: 1fr 1fr 2fr;
     row-gap: 30px;
-}
-
-.content > * {
-    /* border: 3px solid red; */
 }
 
 .interior-img {
