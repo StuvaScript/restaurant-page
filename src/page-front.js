@@ -69,6 +69,16 @@ export default function frontPage() {
             this.a = this.manipulateDOM('a', 'Good Ware', '', '.fLi7', 'href', 'https://www.flaticon.com/free-icon/fish-bone_4201633?term=fish%20bones&page=1&position=1&page=1&position=1&related_id=4201633&origin=style', 'title', 'fish bone icons', 'target', '_blank');
             this.li = this.manipulateDOM('li', '', 'fLi8', '.foot-list');
             this.a = this.manipulateDOM('a', 'Doggo Ipsum', '', '.fLi8', 'href', 'https://doggoipsum.com/', 'target', '_blank');
+            this.li = this.manipulateDOM('li', '', 'fLi9', '.foot-list');
+            this.a = this.manipulateDOM('a', 'Parnis Azimi', '', '.fLi9', 'href', 'https://unsplash.com/photos/dIbPZcftpL8', 'target', '_blank');
+            this.li = this.manipulateDOM('li', '', 'fLi10', '.foot-list');
+            this.a = this.manipulateDOM('a', 'ducken99', '', '.fLi10', 'href', 'https://pixabay.com/photos/fried-rice-thai-food-thai-cuisine-3023040/', 'target', '_blank');
+            this.li = this.manipulateDOM('li', '', 'fLi11', '.foot-list');
+            this.a = this.manipulateDOM('a', 'ROMAN ODINTSOV', '', '.fLi11', 'href', 'https://www.pexels.com/photo/delicious-appetizer-with-boiled-lobster-and-wine-4553378/', 'target', '_blank');
+            this.li = this.manipulateDOM('li', '', 'fLi12', '.foot-list');
+            this.a = this.manipulateDOM('a', 'kkolosov', '', '.fLi12', 'href', 'https://pixabay.com/photos/top-view-basil-herbs-bowl-closeup-1248955/', 'target', '_blank');
+            this.li = this.manipulateDOM('li', '', 'fLi13', '.foot-list');
+            this.a = this.manipulateDOM('a', 'Jordane Mathieu', '', '.fLi13', 'href', 'https://unsplash.com/photos/q8-yKQ3P7J0', 'target', '_blank');
         },
         longText: {
             p1: 'Doggo ipsum borkf puggo noodle horse heckin good boys long water shoob, heckin good boys and girls very jealous pupper very taste wow. Pupper boof aqua doggo lotsa pats very good spot pupper much ruin diet very good spot boof super chub, such treat borkdrive blop the neighborhood pupper yapper wrinkler shooberino. Pats woofer smol borking doggo with a long snoot for pats wrinkler lotsa pats most angery pupper I have ever seen, ur givin me a spook.',

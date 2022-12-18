@@ -1,4 +1,5 @@
 import frontPage from './page-front.js';
+import foodPage from './page-food.js';
 import './normalize.css';
 import './style.css';
 import shed from './pictures/pexels-stein-egil-liland-5740848.jpg';
@@ -6,8 +7,9 @@ import shed from './pictures/pexels-stein-egil-liland-5740848.jpg';
 // Import the other photos too?
 
 function component() {
-    // console.log(frontPage());
-    return frontPage();
+
+    return foodPage();
+
 }
 
 component();
