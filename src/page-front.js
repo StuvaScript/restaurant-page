@@ -9,7 +9,23 @@ export default function frontPage() {
         manipulateDOM: function(element, innerText, className, appendTo, ...attributes) {
             let newElement = document.createElement(element);
             (innerText !== '') ? newElement.innerText = innerText : '';
-            (className !== '') ? newElement.classList.add(className) : '';
+            if (className !== '') {
+                const classArray = className.split(' ');
+                switch (classArray.length) {
+                    case 1:
+                        newElement.classList.add(classArray[0]);
+                        break;
+                    case 2:
+                        newElement.classList.add(classArray[0], classArray[1]);
+                        break;
+                    case 3:
+                        newElement.classList.add(classArray[0], classArray[1], classArray[2]);
+                        break;
+                    case 4:
+                        newElement.classList.add(classArray[0], classArray[1], classArray[2], classArray[3]);
+                        break;
+                }
+            }
             document.querySelector(appendTo).appendChild(newElement);
             if (attributes.length !== 0) {
                 let sets = attributes.length / 2;
