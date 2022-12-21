@@ -1,4 +1,4 @@
-export default function foodPage() {
+export default function pageFood() {
 
     const innerObject = {
         init: function() {

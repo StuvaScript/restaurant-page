@@ -1,14 +1,21 @@
-import frontPage from './page-front.js';
-import foodPage from './page-food.js';
+import pageFront from './page-front.js';
+import pageFood from './page-food.js';
+import pageMain from './page-main.js';
 import './normalize.css';
 import './style.css';
 import shed from './pictures/pexels-stein-egil-liland-5740848.jpg';
 
 // Import the other photos too?
 
+pageMain()
+
 function component() {
 
-    return foodPage();
+    // In the middle of having pageMain() always show but with the createMain() function gone. Then import createMain() from the
+    // other pages as an event listener
+
+
+    return pageFront();
 
 }
 
