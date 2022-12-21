@@ -61,7 +61,8 @@ main {
 
 .sidebar li {
     list-style-type: none;
-    padding-bottom: 9rem;
+    margin-bottom: 9rem;
+    cursor: pointer;
 }
 
 .sidebar li::after {

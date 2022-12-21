@@ -1,6 +1,6 @@
+import pageMain from './page-main.js';
 import pageFront from './page-front.js';
 import pageFood from './page-food.js';
-import pageMain from './page-main.js';
 import './normalize.css';
 import './style.css';
 import shed from './pictures/pexels-stein-egil-liland-5740848.jpg';
@@ -11,12 +11,29 @@ pageMain()
 
 function component() {
 
-    // In the middle of having pageMain() always show but with the createMain() function gone. Then import createMain() from the
-    // other pages as an event listener
+    pageFront();
 
+    function removeElements() {
+        let picky = document.querySelectorAll('main > *:not(:first-child)');
+        for (const el of picky) {
+            el.remove();
+        }
+    };
 
-    return pageFront();
+    document.querySelector('.sidebar > ul').addEventListener('click', function(e) {
+        const idx = [...this.children].indexOf(e.target);
 
+        switch (idx) {
+            case 0:
+                removeElements();
+                pageFront();
+                break;
+            case 1:
+                removeElements();
+                pageFood();
+                break;
+        }
+    });
 }
 
 component();

@@ -3,7 +3,7 @@ export default function pageFront() {
     const innerObject = {
         init: function() {
             // this.createHeader();
-            this.cacheDOM();
+            // this.cacheDOM();
 
             this.createMain();
             // this.createFooter();
@@ -53,13 +53,15 @@ export default function pageFront() {
         //     this.img = this.manipulateDOM('img', '', 'shed-img', 'header', 'src', '../src/pictures/pexels-stein-egil-liland-5740848.jpg', 'alt', 'A rundown shed at night.');
         // },
         createMain: function() {            
-            this.main = document.createElement('main');            
-            this.content.insertBefore(this.main, this.footer);
-            this.div = this.manipulateDOM('div', '', 'sidebar', 'main');
-            this.ul = this.manipulateDOM('ul', '', '', '.sidebar');
-            this.li = this.manipulateDOM('li', 'Who We Are', '', 'ul');
-            this.li = this.manipulateDOM('li', 'Our Creations', '', 'ul');
-            this.li = this.manipulateDOM('li', 'Reserve A Table', '', 'ul');
+            // this.main = document.createElement('main');            
+            // this.content.insertBefore(this.main, this.footer);
+            // this.div = this.manipulateDOM('div', '', 'sidebar', 'main');
+            // this.ul = this.manipulateDOM('ul', '', '', '.sidebar');
+            // this.li = this.manipulateDOM('li', 'Who We Are', '', 'ul');
+            // this.li = this.manipulateDOM('li', 'Our Creations', '', 'ul');
+            // this.li = this.manipulateDOM('li', 'Reserve A Table', '', 'ul');
+
+
             this.div = this.manipulateDOM('div', '', 'feature', 'main');
             this.img = this.manipulateDOM('img', '', 'interior-img', '.feature', 'src', '../src/pictures/pexels-arthouse-studio-4344544.jpg', 'alt', 'Interior of restaurant.');
             this.div = this.manipulateDOM('div', '', 'info', '.feature');

@@ -2,9 +2,15 @@ export default function pageFood() {
 
     const innerObject = {
         init: function() {
-            this.createHeader();
+            // this.createHeader();
+            // this.cacheDOM();
+
             this.createMain();
-            this.createFooter();
+            // this.createFooter();
+        },
+        cacheDOM: function() {
+            this.content = document.querySelector('#content');
+            this.footer = document.querySelector('footer');
         },
         manipulateDOM: function(element, innerText, className, appendTo, ...attributes) {
             let newElement = document.createElement(element);
@@ -47,12 +53,14 @@ export default function pageFood() {
             this.img = this.manipulateDOM('img', '', 'shed-img', 'header', 'src', '../src/pictures/pexels-stein-egil-liland-5740848.jpg', 'alt', 'A rundown shed at night.');
         },
         createMain: function() {            
-            this.main = this.manipulateDOM('main', '', '', '#content');
-            this.div = this.manipulateDOM('div', '', 'sidebar', 'main');
-            this.ul = this.manipulateDOM('ul', '', '', '.sidebar');
-            this.li = this.manipulateDOM('li', 'Who We Are', '', 'ul');
-            this.li = this.manipulateDOM('li', 'Our Creations', '', 'ul');
-            this.li = this.manipulateDOM('li', 'Reserve A Table', '', 'ul');
+            // this.main = this.manipulateDOM('main', '', '', '#content');
+            // this.div = this.manipulateDOM('div', '', 'sidebar', 'main');
+            // this.ul = this.manipulateDOM('ul', '', '', '.sidebar');
+            // this.li = this.manipulateDOM('li', 'Who We Are', '', 'ul');
+            // this.li = this.manipulateDOM('li', 'Our Creations', '', 'ul');
+            // this.li = this.manipulateDOM('li', 'Reserve A Table', '', 'ul');
+
+
             this.div = this.manipulateDOM('div', '', 'food-feature', 'main');
             this.div = this.manipulateDOM('div', '', 'food-squares box-1', '.food-feature');
             this.img = this.manipulateDOM('img', '', 'fs1', '.box-1', 'src', '../src/pictures/parnis-azimi-dIbPZcftpL8-unsplash.jpg', 'alt', 'steak');
