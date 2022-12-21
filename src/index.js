@@ -1,6 +1,7 @@
-import pageMain from './page-main.js';
-import pageFront from './page-front.js';
-import pageFood from './page-food.js';
+// import pageMain from './page-main.js';
+// import pageAbout from './page-about.js';
+// import pageFood from './page-food.js';
+// import pageReserve from './page-reserve';
 import './normalize.css';
 import './style.css';
 import shed from './pictures/pexels-stein-egil-liland-5740848.jpg';
@@ -11,10 +12,12 @@ pageMain()
 
 function component() {
 
-    pageFront();
+// See if you can underline sidebar according to the active page with javascript
+
+    pageAbout();
 
     function removeElements() {
-        let picky = document.querySelectorAll('main > *:not(:first-child)');
+        const picky = document.querySelectorAll('main > *:not(:first-child)');
         for (const el of picky) {
             el.remove();
         }
@@ -26,7 +29,7 @@ function component() {
         switch (idx) {
             case 0:
                 removeElements();
-                pageFront();
+                pageAbout();
                 break;
             case 1:
                 removeElements();
@@ -35,6 +38,10 @@ function component() {
         }
     });
 }
+
+// Just need to create the "reservations" page, add it to the switch statement in this file, delete all commented out
+// codes in the other files, and read these other commented notes to see if I need to do more before wrapping this
+// project up.
 
 component();
 

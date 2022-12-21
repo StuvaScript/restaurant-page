@@ -1,4 +1,4 @@
-export default function pageFront() {
+export default function pageAbout() {
 
     const innerObject = {
         init: function() {
