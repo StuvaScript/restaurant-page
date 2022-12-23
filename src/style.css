@@ -196,91 +196,124 @@ form {
     font-family: 'CustomFont', Arial, sans-serif;
     font-weight: 900;
     font-size: 1rem;
-    border: 3px solid #bada55;
 
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(7, auto);
-    gap: 10px;
+    gap: 20px;
     grid-template-areas: 
     'name name email email'
     'phone phone phone phone'
-    ' . guest guest . '
+    ' . guests guests . '
     ' . date date . '
     ' . time time . '
     'message message message message'
     'submit submit submit submit';
 }
 
-form > div:nth-child(1) {
+.name {
     grid-area: name;
 }
 
-form > div:nth-child(1) > * {
-    width: 100%;
-}
-
-form > div:nth-child(2) {
+.email {
     grid-area: email;
 }
 
-form > div:nth-child(2) > * {
-    width: 100%;
-}
-
-form > div:nth-child(3) {
+.phone {
     grid-area: phone;
 }
 
-form > div:nth-child(3) > * {
+.name > *,
+.email > *,
+.phone > * {
     width: 100%;
 }
 
-form > div:nth-child(4) {
-    grid-area: guest;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+.guests {
+    grid-area: guests;
 }
 
-form > div:nth-child(4):first-child {
-    justify-self: end;
-}
-
-form > div:nth-child(5) {
+.date {
     grid-area: date;
 }
 
-form > div:nth-child(6) {
+.time {
     grid-area: time;
 }
 
-form > div:nth-child(7) {
+.guests,
+.date,
+.time {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.guests > div:first-child,
+.date > div:first-child,
+.time > div:first-child {
+    justify-self: end;
+}
+
+.message {
     grid-area: message;
+    display: grid;
 }
 
 form > button {
     grid-area: submit;
 }
 
-form > * {
-    border: 2px solid #1ce;
+input,
+select,
+textarea,
+form > button {
+    padding: 10px 5px;
+    background: var(--white);
+    border: none;
+    border-radius: 5px;
 }
 
-input {
-    padding: 10px 2px;
-    /* width: 100%; */
-}
-
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
     color: var(--brown);
     font-weight: bold;
     opacity: .7;
 }
 
+input[type="number"] {
+    text-align: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
 textarea {
     resize: none;
-    /* display: block; */
+    height: 150px;
+}
+
+form > button:hover {
+    background: rgb(216, 215, 202);
+    cursor: pointer;
+}
+
+form > button:active {
+    background: var(--white);
+}
+
+form > button:disabled {
+    color: var(--brown);
+    font-weight: bold;
 }
 
 footer {
