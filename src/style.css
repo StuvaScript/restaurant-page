@@ -197,6 +197,70 @@ form {
     font-weight: 900;
     font-size: 1rem;
     border: 3px solid #bada55;
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(7, auto);
+    gap: 10px;
+    grid-template-areas: 
+    'name name email email'
+    'phone phone phone phone'
+    ' . guest guest . '
+    ' . date date . '
+    ' . time time . '
+    'message message message message'
+    'submit submit submit submit';
+}
+
+form > div:nth-child(1) {
+    grid-area: name;
+}
+
+form > div:nth-child(1) > * {
+    width: 100%;
+}
+
+form > div:nth-child(2) {
+    grid-area: email;
+}
+
+form > div:nth-child(2) > * {
+    width: 100%;
+}
+
+form > div:nth-child(3) {
+    grid-area: phone;
+}
+
+form > div:nth-child(3) > * {
+    width: 100%;
+}
+
+form > div:nth-child(4) {
+    grid-area: guest;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+form > div:nth-child(4):first-child {
+    justify-self: end;
+}
+
+form > div:nth-child(5) {
+    grid-area: date;
+}
+
+form > div:nth-child(6) {
+    grid-area: time;
+}
+
+form > div:nth-child(7) {
+    grid-area: message;
+}
+
+form > button {
+    grid-area: submit;
 }
 
 form > * {
@@ -205,6 +269,7 @@ form > * {
 
 input {
     padding: 10px 2px;
+    /* width: 100%; */
 }
 
 input::placeholder {
@@ -215,7 +280,7 @@ input::placeholder {
 
 textarea {
     resize: none;
-    display: block;
+    /* display: block; */
 }
 
 footer {
