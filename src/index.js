@@ -41,9 +41,8 @@ function component() {
     });
 }
 
-// Just need to create the "reservations" page, add it to the switch statement in this file, delete all commented out
-// codes in the other files, and read these other commented notes to see if I need to do more before wrapping this
-// project up.
+// Just need to read these other commented notes to see if I need to do more before wrapping 
+// this project up.
 
 component();
 
