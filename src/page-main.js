@@ -53,24 +53,6 @@ export default function pageMain() {
             this.li = this.manipulateDOM('li', 'Who We Are', '', 'ul');
             this.li = this.manipulateDOM('li', 'Our Creations', '', 'ul');
             this.li = this.manipulateDOM('li', 'Reserve A Table', '', 'ul');
-
-
-            // this.div = this.manipulateDOM('div', '', 'food-feature', 'main');
-            // this.div = this.manipulateDOM('div', '', 'food-squares box-1', '.food-feature');
-            // this.img = this.manipulateDOM('img', '', 'fs1', '.box-1', 'src', '../src/pictures/parnis-azimi-dIbPZcftpL8-unsplash.jpg', 'alt', 'steak');
-            // this.div = this.manipulateDOM('div', 'Rare Przewalski\'s Horse Steak', 'description', '.box-1');
-            // this.div = this.manipulateDOM('div', '', 'food-squares box-2', '.food-feature');
-            // this.img = this.manipulateDOM('img', '', 'fs2', '.box-2', 'src', '../src/pictures/fried-rice-3023040_1920.jpg', 'alt', 'rice');
-            // this.div = this.manipulateDOM('div', 'Hillside Arsenic Seeds', 'description', '.box-2');
-            // this.div = this.manipulateDOM('div', '', 'food-squares box-3', '.food-feature');
-            // this.img = this.manipulateDOM('img', '', 'fs3', '.box-3', 'src', '../src/pictures/pexels-roman-odintsov-4553378.jpg', 'alt', 'lobster dish');
-            // this.div = this.manipulateDOM('div', 'Crushed-tacean', 'description', '.box-3');
-            // this.div = this.manipulateDOM('div', '', 'food-squares box-4', '.food-feature');
-            // this.img = this.manipulateDOM('img', '', 'fs4', '.box-4', 'src', '../src/pictures/top-view-1248955_1920.jpg', 'alt', 'bowl of spinach');
-            // this.div = this.manipulateDOM('div', 'Bowl Of Fresh Leaves', 'description', '.box-4');
-            // this.div = this.manipulateDOM('div', '', 'food-squares box-5', '.food-feature');
-            // this.img = this.manipulateDOM('img', '', 'fs5', '.box-5', 'src', '../src/pictures/jordane-mathieu-q8-yKQ3P7J0-unsplash.jpg', 'alt', 'chocolate cake');
-            // this.div = this.manipulateDOM('div', 'Hard Labor Derived Tiramisu', 'description', '.box-5');
         },
         createFooter: function() {
             this.footer = this.manipulateDOM('footer', '', '', '#content');
@@ -102,10 +84,6 @@ export default function pageMain() {
             this.a = this.manipulateDOM('a', 'kkolosov', '', '.fLi12', 'href', 'https://pixabay.com/photos/top-view-basil-herbs-bowl-closeup-1248955/', 'target', '_blank');
             this.li = this.manipulateDOM('li', '', 'fLi13', '.foot-list');
             this.a = this.manipulateDOM('a', 'Jordane Mathieu', '', '.fLi13', 'href', 'https://unsplash.com/photos/q8-yKQ3P7J0', 'target', '_blank');
-        },
-        longText: {
-            p1: 'Doggo ipsum borkf puggo noodle horse heckin good boys long water shoob, heckin good boys and girls very jealous pupper very taste wow. Pupper boof aqua doggo lotsa pats very good spot pupper much ruin diet very good spot boof super chub, such treat borkdrive blop the neighborhood pupper yapper wrinkler shooberino. Pats woofer smol borking doggo with a long snoot for pats wrinkler lotsa pats most angery pupper I have ever seen, ur givin me a spook.',
-            p2: 'Bork h*ck heckin good boys and girls doing me a frighten doggorino adorable doggo, many pats aqua doggo doge pats clouds ruff, sub woofer lotsa pats very hand that feed shibe noodle horse. Fat boi wrinkler what a nice floof he made many woofs very taste wow, the neighborhood pupper long water shoob blop, noodle horse very taste wow very good spot. Blop you are doing me a frighten he made many woofs blep big ol tungg ruff very hand that feed.',
         },
     };
 

@@ -1,7 +1,7 @@
-// import pageMain from './page-main.js';
-// import pageAbout from './page-about.js';
-// import pageFood from './page-food.js';
-// import pageReserve from './page-reserve';
+import pageMain from './page-main.js';
+import pageAbout from './page-about.js';
+import pageFood from './page-food.js';
+import pageReserve from './page-reserve';
 import './normalize.css';
 import './style.css';
 import shed from './pictures/pexels-stein-egil-liland-5740848.jpg';
@@ -11,8 +11,6 @@ import shed from './pictures/pexels-stein-egil-liland-5740848.jpg';
 pageMain()
 
 function component() {
-
-// See if you can underline sidebar according to the active page with javascript
 
     pageAbout();
 
@@ -34,6 +32,10 @@ function component() {
             case 1:
                 removeElements();
                 pageFood();
+                break;
+            case 2:
+                removeElements();
+                pageReserve();
                 break;
         }
     });

@@ -2,15 +2,7 @@ export default function pageFood() {
 
     const innerObject = {
         init: function() {
-            // this.createHeader();
-            // this.cacheDOM();
-
             this.createMain();
-            // this.createFooter();
-        },
-        cacheDOM: function() {
-            this.content = document.querySelector('#content');
-            this.footer = document.querySelector('footer');
         },
         manipulateDOM: function(element, innerText, className, appendTo, ...attributes) {
             let newElement = document.createElement(element);
@@ -53,14 +45,6 @@ export default function pageFood() {
             this.img = this.manipulateDOM('img', '', 'shed-img', 'header', 'src', '../src/pictures/pexels-stein-egil-liland-5740848.jpg', 'alt', 'A rundown shed at night.');
         },
         createMain: function() {            
-            // this.main = this.manipulateDOM('main', '', '', '#content');
-            // this.div = this.manipulateDOM('div', '', 'sidebar', 'main');
-            // this.ul = this.manipulateDOM('ul', '', '', '.sidebar');
-            // this.li = this.manipulateDOM('li', 'Who We Are', '', 'ul');
-            // this.li = this.manipulateDOM('li', 'Our Creations', '', 'ul');
-            // this.li = this.manipulateDOM('li', 'Reserve A Table', '', 'ul');
-
-
             this.div = this.manipulateDOM('div', '', 'food-feature', 'main');
             this.div = this.manipulateDOM('div', '', 'food-squares box-1', '.food-feature');
             this.img = this.manipulateDOM('img', '', 'fs1', '.box-1', 'src', '../src/pictures/parnis-azimi-dIbPZcftpL8-unsplash.jpg', 'alt', 'steak');
@@ -108,10 +92,6 @@ export default function pageFood() {
             this.a = this.manipulateDOM('a', 'kkolosov', '', '.fLi12', 'href', 'https://pixabay.com/photos/top-view-basil-herbs-bowl-closeup-1248955/', 'target', '_blank');
             this.li = this.manipulateDOM('li', '', 'fLi13', '.foot-list');
             this.a = this.manipulateDOM('a', 'Jordane Mathieu', '', '.fLi13', 'href', 'https://unsplash.com/photos/q8-yKQ3P7J0', 'target', '_blank');
-        },
-        longText: {
-            p1: 'Doggo ipsum borkf puggo noodle horse heckin good boys long water shoob, heckin good boys and girls very jealous pupper very taste wow. Pupper boof aqua doggo lotsa pats very good spot pupper much ruin diet very good spot boof super chub, such treat borkdrive blop the neighborhood pupper yapper wrinkler shooberino. Pats woofer smol borking doggo with a long snoot for pats wrinkler lotsa pats most angery pupper I have ever seen, ur givin me a spook.',
-            p2: 'Bork h*ck heckin good boys and girls doing me a frighten doggorino adorable doggo, many pats aqua doggo doge pats clouds ruff, sub woofer lotsa pats very hand that feed shibe noodle horse. Fat boi wrinkler what a nice floof he made many woofs very taste wow, the neighborhood pupper long water shoob blop, noodle horse very taste wow very good spot. Blop you are doing me a frighten he made many woofs blep big ol tungg ruff very hand that feed.',
         },
     };
 
