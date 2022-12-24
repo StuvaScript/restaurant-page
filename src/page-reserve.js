@@ -51,7 +51,7 @@ export default function pageReserve() {
             this.input = this.manipulateDOM('input', '', '', '.phone', 'type', 'tel', 'id', 'phone', 'name', 'phone', 'placeholder', 'Phone *', 'aria-required', 'true', 'required', '');
             this.div = this.manipulateDOM('div', '', 'guests', 'form');
             this.div = this.manipulateDOM('div', '', 'g1', '.guests');
-            this.label = this.manipulateDOM('label', 'Guests * (between 2 and 8): ', '', '.g1', 'for', 'guests');
+            this.label = this.manipulateDOM('label', 'Guests * (between 2 and 8)', '', '.g1', 'for', 'guests');
             this.div = this.manipulateDOM('div', '', 'g2', '.guests');
             this.input = this.manipulateDOM('input', '', '', '.g2', 'type', 'number', 'id', 'guests', 'name', 'guests', 'min', '2', 'max', '8', 'aria-required', 'true', 'required', '');
             this.div = this.manipulateDOM('div', '', 'date', 'form');
@@ -61,7 +61,7 @@ export default function pageReserve() {
             this.input = this.manipulateDOM('input', '', '', '.d2', 'type', 'date', 'id', 'date', 'name', 'date', 'aria-required', 'true', 'required', '');
             this.div = this.manipulateDOM('div', '', 'time', 'form');
             this.div = this.manipulateDOM('div', '', 't1', '.time');
-            this.label = this.manipulateDOM('label', 'Hours: Open 4pm. Close 11:30pm<', '', '.t1', 'for', 'time');
+            this.label = this.manipulateDOM('label', 'Hours: Open 4pm. Close 11:30pm', '', '.t1', 'for', 'time');
             this.div = this.manipulateDOM('div', '', 't2', '.time');
             this.select = this.manipulateDOM('select', '', '', '.t2', 'name', 'time', 'id', 'time', 'aria-required', 'true', 'required', '');
             this.option = this.manipulateDOM('option', 'Time *', '', '#time', 'selected', '', 'disabled', '', 'value', ' ');
