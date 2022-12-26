@@ -4,9 +4,6 @@ import pageFood from './page-food.js';
 import pageReserve from './page-reserve';
 import './normalize.css';
 import './style.css';
-import shed from './pictures/pexels-stein-egil-liland-5740848.jpg';
-
-// Import the other photos too?
 
 pageMain()
 
@@ -40,9 +37,6 @@ function component() {
         }
     });
 }
-
-// Just need to read these other commented notes to see if I need to do more before wrapping 
-// this project up.
 
 component();
 
