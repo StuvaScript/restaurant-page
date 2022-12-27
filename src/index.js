@@ -2,6 +2,7 @@ import pageMain from './page-main.js';
 import pageAbout from './page-about.js';
 import pageFood from './page-food.js';
 import pageReserve from './page-reserve';
+import shedImg from './pictures/pexels-roman-odintsov-4553378.jpg';
 import './normalize.css';
 import './style.css';
 
