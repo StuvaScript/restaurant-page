@@ -6,7 +6,8 @@ import shedImg from './pictures/pexels-roman-odintsov-4553378.jpg';
 import './normalize.css';
 import './style.css';
 
-pageMain()
+pageMain();
+shedImg;
 
 function component() {
 
