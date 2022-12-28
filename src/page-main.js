@@ -1,3 +1,5 @@
+import shedImg from './pictures/pexels-stein-egil-liland-5740848.jpg';
+
 export default function pageMain() {
 
     const innerObject = {
@@ -44,7 +46,7 @@ export default function pageMain() {
             this.span = this.manipulateDOM('span', 'Abandoned', '', 'h1');
             this.br = this.manipulateDOM('br', '', '', 'h1');
             this.span = this.manipulateDOM('span', 'Shed Café', '', 'h1');
-            this.img = this.manipulateDOM('img', '', 'shed-img', 'header', 'src', '/src/pictures/pexels-stein-egil-liland-5740848.jpg', 'alt', 'A rundown shed at night.');
+            this.img = this.manipulateDOM('img', '', 'shed-img', 'header', 'src', shedImg, 'alt', 'A rundown shed at night.');
         },
         createMain: function() {            
             this.main = this.manipulateDOM('main', '', '', '#content');
