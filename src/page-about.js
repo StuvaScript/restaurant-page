@@ -1,3 +1,9 @@
+import interiorImg from './pictures/pexels-arthouse-studio-4344544.jpg';
+import eatingImg from './pictures/pexels-helena-lopes-696218.jpg';
+import cookingImg from './pictures/pexels-araz-yurtseven-13739759.jpg';
+import fishImg from './pictures/pexels-алекке-блажин-11244934.jpg';
+import fireImg from './pictures/johnathan-macedo-4NQEvxW2_4w-unsplash.jpg';
+
 export default function pageAbout() {
 
     const innerObject = {
@@ -38,16 +44,16 @@ export default function pageAbout() {
         },
         createMain: function() {            
             this.div = this.manipulateDOM('div', '', 'feature', 'main');
-            this.img = this.manipulateDOM('img', '', 'interior-img', '.feature', 'src', '../src/pictures/pexels-arthouse-studio-4344544.jpg', 'alt', 'Interior of restaurant.');
+            this.img = this.manipulateDOM('img', '', 'interior-img', '.feature', 'src', interiorImg, 'alt', 'Interior of restaurant.');
             this.div = this.manipulateDOM('div', '', 'info', '.feature');
             this.div = this.manipulateDOM('div', '', 'para-div', '.info');
             this.p = this.manipulateDOM('p', this.longText.p1, '', '.para-div');
             this.br = this.manipulateDOM('br', '', '', '.para-div');
             this.p = this.manipulateDOM('p', this.longText.p2, '', '.para-div');
-            this.img = this.manipulateDOM('img', '', 'eating-img', '.feature', 'src', '../src/pictures/pexels-helena-lopes-696218.jpg', 'alt', 'People eating.');
-            this.img = this.manipulateDOM('img', '', 'cooking-img', '.feature', 'src', '../src/pictures/pexels-araz-yurtseven-13739759.jpg', 'alt', 'Cooking food over fire.');
-            this.img = this.manipulateDOM('img', '', 'fish-img', '.feature', 'src', '../src/pictures/pexels-алекке-блажин-11244934.jpg', 'alt', 'Fish head food.');
-            this.img = this.manipulateDOM('img', '', 'fire-img', 'main', 'src', '../src/pictures/johnathan-macedo-4NQEvxW2_4w-unsplash.jpg', 'alt', 'Chef cooking with fire.');
+            this.img = this.manipulateDOM('img', '', 'eating-img', '.feature', 'src', eatingImg, 'alt', 'People eating.');
+            this.img = this.manipulateDOM('img', '', 'cooking-img', '.feature', 'src', cookingImg, 'alt', 'Cooking food over fire.');
+            this.img = this.manipulateDOM('img', '', 'fish-img', '.feature', 'src', fishImg, 'alt', 'Fish head food.');
+            this.img = this.manipulateDOM('img', '', 'fire-img', 'main', 'src', fireImg, 'alt', 'Chef cooking with fire.');
         },
         longText: {
             p1: 'Doggo ipsum borkf puggo noodle horse heckin good boys long water shoob, heckin good boys and girls very jealous pupper very taste wow. Pupper boof aqua doggo lotsa pats very good spot pupper much ruin diet very good spot boof super chub, such treat borkdrive blop the neighborhood pupper yapper wrinkler shooberino. Pats woofer smol borking doggo with a long snoot for pats wrinkler lotsa pats most angery pupper I have ever seen, ur givin me a spook.',
