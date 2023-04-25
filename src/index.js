@@ -8,8 +8,7 @@ import "./style.css";
 pageMain();
 
 function component() {
-  // pageAbout();
-  pageFood();
+  pageAbout();
 
   function removeElements() {
     const picky = document.querySelectorAll("main > *:not(:first-child)");
