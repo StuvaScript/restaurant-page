@@ -24,12 +24,9 @@ h1 {
   font-family: "CustomFont", Arial, sans-serif;
   letter-spacing: 5px;
   position: absolute;
-  /* top: 20px; */
   text-align: center;
   padding: 4vw 8vw;
-  /* padding: 40px 90px; */
   border-radius: 50%;
-  /* font-size: 6rem; */
   font-size: 6vw;
   background: var(--white);
   opacity: 0.3;
@@ -56,17 +53,21 @@ main {
 .sidebar {
   display: flex;
   justify-content: center;
+  padding: 30px;
 }
 
 .sidebar ul {
   padding: 0;
   margin: 0;
   font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 7vw;
 }
 
 .sidebar li {
   list-style-type: none;
-  margin-bottom: 9rem;
   cursor: pointer;
 }
 
@@ -108,9 +109,9 @@ main {
 
 .food-squares {
   width: 70%;
-  height: 80vh;
+  height: 40vw;
   background: var(--white);
-  padding: 50px 50px 10px;
+  padding: 2.5vw 2.5vw 2vw;
 }
 
 .food-squares > img {
@@ -131,6 +132,7 @@ main {
   height: 20%;
   color: #000;
   font-size: 3rem;
+  font-size: 4vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -358,4 +360,46 @@ a:visited,
 a:hover,
 a:active {
   color: var(--white);
+}
+
+@media (max-width: 1200px) {
+  .feature {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .interior-img {
+    grid-column: 1 / 2;
+  }
+}
+
+@media (max-width: 800px) {
+  .feature {
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: 1fr;
+  }
+
+  .eating-img {
+    grid-row: 3 / 4;
+  }
+
+  .cooking-img {
+    grid-row: 4 / 5;
+  }
+
+  .fish-img {
+    grid-row: 5 / 6;
+  }
+
+  .info {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
 }
