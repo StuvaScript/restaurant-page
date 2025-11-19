@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "lib": ["esnext", "dom", "DOM.Iterable"],
+    "noImplicitAny": true,
+    // "module": "nodenext", <-- This is for backend node work
+    "module": "esnext",
+    "target": "esnext",
+    "jsx": "react",
+    "allowJs": true,
+    // "moduleResolution": "nodenext" <-- This is for backend node work
+    "moduleResolution": "bundler"
+  }
+}
