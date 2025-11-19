@@ -1,17 +1,18 @@
-import pageMain from "./page-main.js";
-import pageAbout from "./page-about.js";
-import pageFood from "./page-food.js";
+import pageMain from "./page-main";
+import pageAbout from "./page-about";
+import pageFood from "./page-food";
 import pageReserve from "./page-reserve";
 import "./normalize.css";
 import "./style.css";
 
 pageMain();
 
-function component() {
+function component(): void {
   pageAbout();
 
   function removeElements() {
-    const picky = document.querySelectorAll("main > *:not(:first-child)");
+    const picky: NodeListOf<HTMLDivElement | HTMLImageElement> =
+      document.querySelectorAll("main > *:not(:first-child)");
     for (const el of picky) {
       el.remove();
     }
@@ -20,7 +21,7 @@ function component() {
   document
     .querySelector(".sidebar > ul")
     .addEventListener("click", function (e) {
-      const idx = [...this.children].indexOf(e.target);
+      const idx: number = [...this.children].indexOf(e.target);
       removeElements();
 
       switch (idx) {
